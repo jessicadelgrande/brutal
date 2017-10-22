@@ -1,2 +1,241 @@
+@import "partials/mixins";
+@import "partials/setup";
+@import "partials/variables";
 
+/////////
+// fonts
 
+@font-face {
+	font-family: "Basis Grotesque R";
+	src: url("../../assets/fonts/BasisGrotesque-Regular.eot");
+	src: url("../../assets/fonts/BasisGrotesque-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../../assets/fonts/BasisGrotesque-Regular.woff") format("woff"),
+		url("../../assets/fonts/BasisGrotesque-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Basis Grotesque M";
+	src: url("../../assets/fonts/BasisGrotesque-Medium.eot");
+	src: url("../../assets/fonts/BasisGrotesque-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../../assets/fonts/BasisGrotesque-Medium.woff") format("woff"),
+		url("../../assets/fonts/BasisGrotesque-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TT Norms R";
+	src: url("../../assets/fonts/TTNorms-Regular.eot");
+	src: url("../../assets/fonts/TTNorms-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../../assets/fonts/TTNorms-Regular.woff") format("woff"),
+		url("../../assets/fonts/TTNorms-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TT Norms M";
+	src: url("../../assets/fonts/TTNorms-Medium.eot");
+	src: url("../../assets/fonts/TTNorms-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../../assets/fonts/TTNorms-Medium.woff") format("woff"),
+		url("../../assets/fonts/TTNorms-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+// end fonts
+////////////
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1px;
+}
+
+.photoWrapper {
+	background-image: url("../../assets/tea_brutal.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.textWrapper {
+	position: relative;
+	margin-top: 4vh;
+}
+
+.title {
+	font-family: $titleFont;
+	font-size: 5em;
+	white-space: nowrap;
+	letter-spacing: -1em;
+	transition: all 1s ease;
+
+	&:hover {
+		letter-spacing: normal;
+		text-align: left;
+		margin-left: -15vw;
+	}
+}
+
+.titleNormal {
+	position: absolute;
+	top: 31px;
+	left: 0px;
+	font-family: $bodyFont;
+	font-size: 3em;
+	color: #cacaca;
+	z-index: -10;
+}
+
+.title:hover ~ .titleNormal {
+	animation: fadeOut 1s ease-out forwards;
+}
+
+.subhead {
+	font-family: $bodyFont;
+	font-size: 3em;
+	letter-spacing: -1em;
+	margin-top: 1em;
+	text-align: left;
+	transition: all 1s ease;
+
+	&:hover {
+		letter-spacing: normal;
+		text-align: left;
+		margin-left: -15vw;
+	}
+}
+
+.subheadNormal {
+	position: absolute;
+	top: 158px;
+	left: 0px;
+	font-family: $bodyFont;
+	font-size: 2em;
+	color: #cacaca;
+	z-index: -10;
+	margin-bottom: 10vh;
+}
+
+.subhead:hover ~ .subheadNormal {
+	animation: fadeOut 1s ease-out forwards;
+}
+
+.detailsContainer {
+	margin: 3em 12px 0 8px;
+}
+
+.details {
+	font-family: $bodyFont;
+	font-size: 1em;
+	text-align: left;
+	margin-top: 18px;
+	display: flex;
+	border-bottom: 1px solid #cacaca;
+	white-space: nowrap;
+}
+
+.details-email {
+	width: 250px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		top: 0px;
+		left: 25px;
+		content: url("../../assets/scribble1.png");
+	}
+}
+
+.details-twitter {
+	width: 156px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		top: -3px;
+		left: 56px;
+		content: url("../../assets/scribble-twitter.png");
+	}
+}
+
+.details-medium {
+	width: 170px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		top: -3px;
+		left: 34px;
+		content: url("../../assets/scribble-medium.png");
+	}
+}
+
+.details-github {
+	width: 230px;
+}
+
+.details-desktop {
+	width: 260px;
+}
+
+.detailsIcon svg {
+	width: 24px;
+	height: 24px;
+	margin: 0 8px;
+	object-fit: contain;
+}
+
+.detailsText {
+	margin: 0;
+	padding: 0;
+	// opacity: 0;
+	white-space: nowrap;
+	// border-right: 2px solid black;
+	overflow: hidden;
+	// animation: typing 10s steps(21, end),
+	// blink .5s step-end infinite alternate;
+
+	&:hover {
+
+	}
+}
+
+a {
+	text-decoration: none;
+
+	&:link,
+	&:visited,
+	&:hover,
+	&:active {
+		color: black;
+	}
+}
+
+//////////////
+// animations
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+// @keyframes blink {
+// 	50%{
+// 		border-color: transparent;
+// 	}
+// }
+
+// @keyframes typing {
+// 	from {
+// 		width: 0;
+// 	}
+// }
