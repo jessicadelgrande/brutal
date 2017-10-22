@@ -145,9 +145,9 @@ main {
 
 	&:before {
 		position: absolute;
-		top: 0px;
-		left: 25px;
-		content: url("../../assets/scribble1.png");
+		top: -3px;
+		left: 34px;
+		content: url("../../assets/scribble-email.png");
 	}
 }
 
@@ -158,7 +158,7 @@ main {
 	&:before {
 		position: absolute;
 		top: -3px;
-		left: 56px;
+		left: 34px;
 		content: url("../../assets/scribble-twitter.png");
 	}
 }
@@ -177,10 +177,26 @@ main {
 
 .details-github {
 	width: 230px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		top: -3px;
+		left: 34px;
+		content: url("../../assets/scribble-github.png");
+	}
 }
 
 .details-desktop {
 	width: 260px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		top: -3px;
+		left: 34px;
+		content: url("../../assets/scribble-desktop.png");
+	}
 }
 
 .detailsIcon svg {

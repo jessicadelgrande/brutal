@@ -241,9 +241,9 @@ main {
   position: relative; }
   .details-email:before {
     position: absolute;
-    top: 0px;
-    left: 25px;
-    content: url("../../assets/scribble1.png"); }
+    top: -3px;
+    left: 34px;
+    content: url("../../assets/scribble-email.png"); }
 
 .details-twitter {
   width: 156px;
@@ -251,7 +251,7 @@ main {
   .details-twitter:before {
     position: absolute;
     top: -3px;
-    left: 56px;
+    left: 34px;
     content: url("../../assets/scribble-twitter.png"); }
 
 .details-medium {
@@ -264,10 +264,22 @@ main {
     content: url("../../assets/scribble-medium.png"); }
 
 .details-github {
-  width: 230px; }
+  width: 230px;
+  position: relative; }
+  .details-github:before {
+    position: absolute;
+    top: -3px;
+    left: 34px;
+    content: url("../../assets/scribble-github.png"); }
 
 .details-desktop {
-  width: 260px; }
+  width: 260px;
+  position: relative; }
+  .details-desktop:before {
+    position: absolute;
+    top: -3px;
+    left: 34px;
+    content: url("../../assets/scribble-desktop.png"); }
 
 .detailsIcon svg {
   width: 24px;
