@@ -1,0 +1,198 @@
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1px;
+}
+
+.photoWrapper {
+	background-image: url("../../assets/tea_brutal.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.textWrapper {
+	position: relative;
+	margin-top: 4vh;
+}
+
+.title {
+	font-family: $titleFont;
+	font-size: 5em;
+	white-space: nowrap;
+	letter-spacing: -1em;
+	transition: all 1s ease;
+
+	&:hover {
+		letter-spacing: normal;
+		text-align: left;
+		margin-left: -15vw;
+	}
+}
+
+.titleNormal {
+	position: absolute;
+	top: 31px;
+	left: 0px;
+	font-family: $bodyFont;
+	font-size: 3em;
+	color: #cacaca;
+	z-index: -10;
+}
+
+.title:hover ~ .titleNormal {
+	animation: fadeOut 1s ease-out forwards;
+}
+
+.subhead {
+	font-family: $bodyFont;
+	font-size: 3em;
+	letter-spacing: -1em;
+	margin-top: 1em;
+	text-align: left;
+	transition: all 1s ease;
+
+	&:hover {
+		letter-spacing: normal;
+		text-align: left;
+		margin-left: -15vw;
+	}
+}
+
+.subheadNormal {
+	position: absolute;
+	top: 158px;
+	left: 0px;
+	font-family: $bodyFont;
+	font-size: 2em;
+	color: #cacaca;
+	z-index: -10;
+	margin-bottom: 10vh;
+}
+
+.subhead:hover ~ .subheadNormal {
+	animation: fadeOut 1s ease-out forwards;
+}
+
+.detailsContainer {
+	margin: 3em 12px 0 8px;
+}
+
+.details {
+	font-family: $bodyFont;
+	font-size: 1em;
+	text-align: left;
+	margin-top: 18px;
+	display: flex;
+	border-bottom: 1px solid #cacaca;
+	white-space: nowrap;
+}
+
+.details-email {
+	width: 250px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		top: -3px;
+		left: 34px;
+		content: url("../../assets/scribble-email.png");
+	}
+
+	&:hover {
+
+		&:before {
+			content: "";
+		}
+	}
+}
+
+.details-twitter {
+	width: 156px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		top: -3px;
+		left: 34px;
+		content: url("../../assets/scribble-twitter.png");
+	}
+
+	&:hover {
+
+		&:before {
+			content: "";
+		}
+	}
+}
+
+.details-medium {
+	width: 170px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		top: -3px;
+		left: 34px;
+		content: url("../../assets/scribble-medium.png");
+	}
+
+	&:hover {
+
+		&:before {
+			content: "";
+		}
+	}
+}
+
+.details-github {
+	width: 230px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		top: -3px;
+		left: 34px;
+		content: url("../../assets/scribble-github.png");
+	}
+
+	&:hover {
+
+		&:before {
+			content: "";
+		}
+	}
+}
+
+.details-desktop {
+	width: 260px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		top: -3px;
+		left: 34px;
+		content: url("../../assets/scribble-desktop.png");
+	}
+
+	&:hover {
+
+		&:before {
+			content: "";
+		}
+	}
+}
+
+.detailsIcon svg {
+	width: 24px;
+	height: 24px;
+	margin: 0 8px;
+	object-fit: contain;
+}
+
+.detailsText {
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}

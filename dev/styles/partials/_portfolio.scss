@@ -1,0 +1,44 @@
+.portfolioWrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	margin-top: 3em;
+}
+
+.singleWrapper {
+	font-family: $bodyFont;
+	border: 1px solid black;
+}
+
+.preview {
+	width: 300px;
+	height: 300px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+}
+
+.tarotImage {
+	background-image: url("../../assets/tarot300.jpg");
+}
+
+.ipsumImage {
+	background-image: url("../../assets/ipsum300.jpg");
+}
+
+.anatomyImage {
+
+}
+
+.bearImage {
+	background-image: url("../../assets/bear300.jpg");
+}
+
+.whatToBringImage {
+	background-image: url("../../assets/whereshouldibuy300.jpg");
+}
+
+.oleanderImage {
+
+}

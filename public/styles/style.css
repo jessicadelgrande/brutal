@@ -132,34 +132,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-@font-face {
-  font-family: "Basis Grotesque R";
-  src: url("../../assets/fonts/BasisGrotesque-Regular.eot");
-  src: url("../../assets/fonts/BasisGrotesque-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/BasisGrotesque-Regular.woff") format("woff"), url("../../assets/fonts/BasisGrotesque-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Basis Grotesque M";
-  src: url("../../assets/fonts/BasisGrotesque-Medium.eot");
-  src: url("../../assets/fonts/BasisGrotesque-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/BasisGrotesque-Medium.woff") format("woff"), url("../../assets/fonts/BasisGrotesque-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: "TT Norms R";
-  src: url("../../assets/fonts/TTNorms-Regular.eot");
-  src: url("../../assets/fonts/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/TTNorms-Regular.woff") format("woff"), url("../../assets/fonts/TTNorms-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "TT Norms M";
-  src: url("../../assets/fonts/TTNorms-Medium.eot");
-  src: url("../../assets/fonts/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/TTNorms-Medium.woff") format("woff"), url("../../assets/fonts/TTNorms-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal; }
-
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -244,6 +216,8 @@ main {
     top: -3px;
     left: 34px;
     content: url("../../assets/scribble-email.png"); }
+  .details-email:hover:before {
+    content: ""; }
 
 .details-twitter {
   width: 156px;
@@ -253,6 +227,8 @@ main {
     top: -3px;
     left: 34px;
     content: url("../../assets/scribble-twitter.png"); }
+  .details-twitter:hover:before {
+    content: ""; }
 
 .details-medium {
   width: 170px;
@@ -262,6 +238,8 @@ main {
     top: -3px;
     left: 34px;
     content: url("../../assets/scribble-medium.png"); }
+  .details-medium:hover:before {
+    content: ""; }
 
 .details-github {
   width: 230px;
@@ -271,6 +249,8 @@ main {
     top: -3px;
     left: 34px;
     content: url("../../assets/scribble-github.png"); }
+  .details-github:hover:before {
+    content: ""; }
 
 .details-desktop {
   width: 260px;
@@ -280,6 +260,8 @@ main {
     top: -3px;
     left: 34px;
     content: url("../../assets/scribble-desktop.png"); }
+  .details-desktop:hover:before {
+    content: ""; }
 
 .detailsIcon svg {
   width: 24px;
@@ -290,8 +272,51 @@ main {
 .detailsText {
   margin: 0;
   padding: 0;
-  white-space: nowrap;
-  overflow: hidden; }
+  white-space: nowrap; }
+
+.portfolioWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 3em; }
+
+.singleWrapper {
+  font-family: "TT Norms R", sans-serif;
+  border: 1px solid black; }
+
+.preview {
+  width: 300px;
+  height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: cover; }
+
+.tarotImage {
+  background-image: url("../../assets/tarot300.jpg"); }
+
+.ipsumImage {
+  background-image: url("../../assets/ipsum300.jpg"); }
+
+.bearImage {
+  background-image: url("../../assets/bear300.jpg"); }
+
+.whatToBringImage {
+  background-image: url("../../assets/whereshouldibuy300.jpg"); }
+
+@font-face {
+  font-family: "TT Norms R";
+  src: url("../../assets/fonts/TTNorms-Regular.eot");
+  src: url("../../assets/fonts/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/TTNorms-Regular.woff") format("woff"), url("../../assets/fonts/TTNorms-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TT Norms M";
+  src: url("../../assets/fonts/TTNorms-Medium.eot");
+  src: url("../../assets/fonts/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/TTNorms-Medium.woff") format("woff"), url("../../assets/fonts/TTNorms-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
 
 a {
   text-decoration: none; }
