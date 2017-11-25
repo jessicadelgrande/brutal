@@ -1,22 +1,77 @@
+.portfolioHeader:before {
+	content: "Jessica Del Grande selected work";
+	position: absolute;
+	font-size: 160px;
+	color: $titleColorNormal;
+	z-index: -10;
+	width: 40vw;
+	line-height: 100px;
+}
+
+.portfolioBackground {
+	background-color: #e4e4e4;
+
+	// &:before {
+	// 	content: "Jessica Del Grande selected work";
+	// 	position: absolute;
+	// 	font-size: 10em;
+	// 	// line-height: 9em;
+	// 	color: $titleColorNormal;
+	// 	z-index: -10;
+	// }
+}
+
 .portfolioWrapper {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-	margin-top: 3em;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 12px;
+	grid-row-gap: 12px;
+	max-width: 70%;
+	height: 100%;
+	margin: auto 50px 0px auto;
+	// margin-top: 100px;
+}
+
+.portfolioTitle {
+	font-family: $titleFont;
+	font-size: 5em;
+	white-space: nowrap;
+	letter-spacing: -1em;
+	transition: all 1s ease;
+
+	&:hover {
+		letter-spacing: normal;
+		text-align: left;
+		margin-left: -15vw;
+	}
+}
+
+.portfolioTitleNormal {
+	// position: absolute;
+	// top: 31px;
+	// left: 0px;
+	font-family: $bodyFont;
+	font-size: 3em;
+	color: #cacaca;
+	z-index: -10;
+}
+
+.portfolioTitle:hover ~ .portfolioTitleNormal {
+	animation: fadeOut 1s ease-out forwards;
 }
 
 .singleWrapper {
 	font-family: $bodyFont;
-	border: 1px solid black;
+	// border: 1px solid black;
 }
 
 .preview {
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 133px;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: cover;
+	background-size: initial;
+	border: 1px solid black;
 }
 
 .tarotImage {

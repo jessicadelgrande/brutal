@@ -1,4 +1,25 @@
-@mixin buttonStyles {
+@mixin reverseTitle {
+	font-family: $titleFont;
+	font-size: 5em;
+	white-space: nowrap;
+	letter-spacing: -1em;
+	transition: all 1s ease;
+
+	&:hover {
+		letter-spacing: normal;
+		text-align: left;
+		margin-left: -15vw;
+	}
+}
+
+@mixin normalTitle {
+	position: absolute;
+	top: 31px;
+	left: 0px;
+	font-family: $bodyFont;
+	font-size: 3em;
+	color: #cacaca;
+	z-index: -10;
 }
 
 // media breakpoints

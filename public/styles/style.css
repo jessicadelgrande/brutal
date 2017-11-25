@@ -197,7 +197,7 @@ main {
   animation: fadeOut 1s ease-out forwards; }
 
 .detailsContainer {
-  margin: 3em 12px 0 8px; }
+  margin: 5em 12px 0 8px; }
 
 .details {
   font-family: "TT Norms R", sans-serif;
@@ -274,23 +274,57 @@ main {
   padding: 0;
   white-space: nowrap; }
 
+.portfolioHeader:before {
+  content: "Jessica Del Grande selected work";
+  position: absolute;
+  font-size: 160px;
+  color: #cacaca;
+  z-index: -10;
+  width: 40vw;
+  line-height: 100px; }
+
+.portfolioBackground {
+  background-color: #e4e4e4; }
+
 .portfolioWrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  margin-top: 3em; }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  max-width: 70%;
+  height: 100%;
+  margin: auto 50px 0px auto; }
+
+.portfolioTitle {
+  font-family: "TT Norms M", sans-serif;
+  font-size: 5em;
+  white-space: nowrap;
+  letter-spacing: -1em;
+  transition: all 1s ease; }
+  .portfolioTitle:hover {
+    letter-spacing: normal;
+    text-align: left;
+    margin-left: -15vw; }
+
+.portfolioTitleNormal {
+  font-family: "TT Norms R", sans-serif;
+  font-size: 3em;
+  color: #cacaca;
+  z-index: -10; }
+
+.portfolioTitle:hover ~ .portfolioTitleNormal {
+  animation: fadeOut 1s ease-out forwards; }
 
 .singleWrapper {
-  font-family: "TT Norms R", sans-serif;
-  border: 1px solid black; }
+  font-family: "TT Norms R", sans-serif; }
 
 .preview {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 133px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: cover; }
+  background-size: initial;
+  border: 1px solid black; }
 
 .tarotImage {
   background-image: url("../../assets/tarot300.jpg"); }
