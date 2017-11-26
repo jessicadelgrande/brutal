@@ -274,57 +274,55 @@ main {
   padding: 0;
   white-space: nowrap; }
 
-.portfolioHeader:before {
-  content: "Jessica Del Grande selected work";
-  position: absolute;
-  font-size: 160px;
-  color: #cacaca;
-  z-index: -10;
-  width: 40vw;
-  line-height: 100px; }
+.portfolioHeader {
+  font-family: monospace;
+  font-size: 10px;
+  height: 224px; }
+  .portfolioHeader:before {
+    font-family: "TT Norms M", sans-serif;
+    content: "Jessica Del Grande selected work";
+    position: fixed;
+    font-size: 160px;
+    color: #cacaca;
+    z-index: -10;
+    width: 40vw;
+    line-height: 100px; }
 
 .portfolioBackground {
   background-color: #e4e4e4; }
 
 .portfolioWrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 12px;
   grid-row-gap: 12px;
-  max-width: 70%;
+  max-width: 55%;
   height: 100%;
-  margin: auto 50px 0px auto; }
-
-.portfolioTitle {
-  font-family: "TT Norms M", sans-serif;
-  font-size: 5em;
-  white-space: nowrap;
-  letter-spacing: -1em;
-  transition: all 1s ease; }
-  .portfolioTitle:hover {
-    letter-spacing: normal;
-    text-align: left;
-    margin-left: -15vw; }
-
-.portfolioTitleNormal {
-  font-family: "TT Norms R", sans-serif;
-  font-size: 3em;
-  color: #cacaca;
-  z-index: -10; }
-
-.portfolioTitle:hover ~ .portfolioTitleNormal {
-  animation: fadeOut 1s ease-out forwards; }
+  margin: auto auto 0px 50px; }
 
 .singleWrapper {
-  font-family: "TT Norms R", sans-serif; }
+  font-family: monospace;
+  position: relative; }
 
 .preview {
-  width: 200px;
-  height: 133px;
+  width: 300px;
+  height: 200px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: initial;
-  border: 1px solid black; }
+  background-size: initial; }
+
+.previewHover {
+  opacity: 0;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .previewHover:hover {
+    opacity: 1; }
 
 .tarotImage {
   background-image: url("../../assets/tarot300.jpg"); }
