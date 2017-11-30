@@ -286,7 +286,16 @@ main {
     color: #cacaca;
     z-index: -10;
     width: 40vw;
-    line-height: 100px; }
+    line-height: 100px;
+    margin: 0; }
+
+.portfolioHeaderText {
+  position: fixed;
+  margin: 20px 0 0 40px;
+  font-family: "TT Norms M", sans-serif;
+  font-size: 3em;
+  line-height: 2em;
+  height: 224px; }
 
 .portfolioWrapper {
   display: grid;
@@ -370,7 +379,8 @@ main {
     opacity: 0.2; }
 
 .brillianOverlay {
-  opacity: 1; }
+  opacity: 1;
+  background-image: url("../../assets/ipsum300.jpg"); }
   .brillianOverlay:hover {
     opacity: 0.2; }
 
@@ -380,7 +390,8 @@ main {
     opacity: 0.2; }
 
 .definityOverlay {
-  opacity: 1; }
+  opacity: 1;
+  background-image: url("../../assets/definity300.jpg"); }
   .definityOverlay:hover {
     opacity: 0.2; }
 

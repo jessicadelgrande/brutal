@@ -12,7 +12,28 @@
 		z-index: -10;
 		width: 40vw;
 		line-height: 100px;
+		margin: 0;
 	}
+}
+
+.portfolioHeaderText {
+	position: fixed;
+	margin: 20px 0 0 40px;
+	// font-family: monospace;
+	font-family: $titleFont;
+	// font-size: 10px;
+	font-size: 3em;
+	line-height: 2em;
+	height: 224px;
+
+	// &:before {
+	// 	font-family: monospace;
+	// 	content: "Jessica Del Grande"
+	// 	font-size: 10px;
+	// 	height: 224px;
+	// 	position: fixed;
+	// 	margin: 20px 0 0 40px;
+	// }
 }
 
 .portfolioBody {
@@ -124,6 +145,7 @@
 
 .brillianOverlay {
 	opacity: 1;
+	background-image: url("../../assets/ipsum300.jpg");
 
 	&:hover {
 		opacity: 0.2;
@@ -140,6 +162,7 @@
 
 .definityOverlay {
 	opacity: 1;
+	background-image: url("../../assets/definity300.jpg");
 
 	&:hover {
 		opacity: 0.2;
